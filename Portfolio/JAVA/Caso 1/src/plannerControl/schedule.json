@@ -1,0 +1,52 @@
+{
+	"tareas" : [
+		{
+			"task": "ensuciarPatio",
+			"time": "07:00",
+			"sector": "Patio",
+			"dia": "Lunes",
+			"esControl": true
+		},
+		{
+			"task": "mandarPlagas",
+			"time": "06:20",
+			"sector": "Patio",
+			"dia": "Lunes",
+			"esControl": true
+		},
+		{
+			"task": "crecerCespedMucho",
+			"time": "10:30",
+			"sector": "Patio",
+			"dia": "Lunes",
+			"esControl": true
+		},
+		{
+			"task": "eliminarPlaga",
+			"time": "9:29",
+			"sector": "Patio",
+			"dia": "Lunes",
+			"esControl": true
+		},			
+		{
+			"task": "acabarPesticida",
+			"time": "8:00",
+			"sector": "Patio",
+			"dia": "Lunes",
+			"esControl": true
+		},	
+		{
+			"task": "checkPatio",
+			"time": "8:00",
+			"sector": "Patio",
+			"dia": "Lunes",
+			"esControl": true
+		},		
+		{
+			"task": "actPatio",
+			"time": "8:00",
+			"sector": "Patio",
+			"esControl": false
+		}		
+	]
+}

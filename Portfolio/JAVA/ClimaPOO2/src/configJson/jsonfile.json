@@ -1,0 +1,50 @@
+{
+	"regiones" : [
+		{
+			"nombre": "Cartago",
+			"minBaro": 1,
+			"maxBaro": 2,
+			"minHigro": 0.40,
+			"maxHigro": 0.80,
+			"porcentaje": 0.2,
+			"probabilidad": 0.1		
+		},
+		{
+			"nombre": "Limon",			
+			"minBaro": 4,
+			"maxBaro": 5,
+			"minHigro": 0.60,
+			"maxHigro": 0.90,
+			"porcentaje": 0.2,
+			"probabilidad": 0.1		
+		},
+		{
+			"nombre": "Alajuela",			
+			"minBaro": 7,
+			"maxBaro": 8,
+			"minHigro": 0.50,
+			"maxHigro": 0.80,
+			"porcentaje": 0.2,
+			"probabilidad": 0.5
+		},
+		{
+			"nombre": "Heredia",			
+			"minBaro": 10,
+			"maxBaro": 11,
+			"minHigro": 0.55,
+			"maxHigro": 0.95,
+			"porcentaje": 0.2,
+			"probabilidad": 0.1
+		},		
+		{
+			"nombre": "San Jose",		
+			"minBaro": 13,
+			"maxBaro": 14,
+			"minHigro": 0.40,
+			"maxHigro": 0.70,
+			"porcentaje": 0.2,
+			"probabilidad": 0.1
+			
+		}
+	]
+}

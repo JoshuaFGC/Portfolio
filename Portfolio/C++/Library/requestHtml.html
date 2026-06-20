@@ -1,0 +1,47 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Portal Web</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <input type="text" id="inputFrase" placeholder="Enter the phrase: ">
+        <button id="buscarBtn">Buscar</button>
+    </div>
+
+    <div id="resultados"></div>
+
+    <script>
+        $(document).ready(function() {
+            $("#buscarBtn").click(function() {
+                var frase = $("#inputFrase").val();
+
+                $.ajax({
+                    type: "POST",
+                    url: "http://localhost:8080/Obtener_libros",
+                    data: { frase: frase }, 
+                    success: function(response) {
+                        var libros = response;
+                        
+                        //Se actualizan los datos mostrados
+                        var resultadosHTML = "";
+                        libros.forEach(function(libro) {
+                            resultadosHTML += "<h3>" + libro.Titulo + " - " + libro.Autor + "</h3>";
+                            libro.Parrafos.forEach(function(parrafo) {
+                                resultadosHTML += "<p>" + parrafo.join("<br>") + "</p>";
+                            });
+                        });
+
+                        $("#resultados").html(resultadosHTML);
+                    },
+                    error: function(xhr, status, error) {
+                        console.error(error);
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
